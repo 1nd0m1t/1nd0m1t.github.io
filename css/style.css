@@ -1,0 +1,111 @@
+:root {
+    --white: #ffffff;
+    --dark: #212121;
+    --primary: #FFC107;
+    --secundary: #0097a7;
+    --grease: #757575;
+    --blue-console: #48CAE4;
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Press Start 2P', Verdana;
+    background-color: var(--dark);
+    color: var(--blue-console)
+}
+
+h1 {
+    font-size: 2.5rem;
+
+}
+
+h2 {
+    font-size: 2.4rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.title{
+    padding: 20px;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--blue-console);
+}
+
+.primaryNavigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    
+}
+
+@media (min-width: 768px) {
+    .primaryNavigation{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.primaryNavigation a {
+    padding: 1rem;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.primaryNavigation a:hover {
+    background-color: var(--dark);
+    color: var(--blue-console);
+}
+
+.hero {
+	/*background-image: url(link);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	padding: 20px;
+	position: relative;
+}
+
+.content-hero {
+	position: absolute;
+    /* image here */
+	width: 100%;
+	height: 100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
