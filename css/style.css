@@ -108,3 +108,49 @@ h1, h2, h3 {
     align-items: center;
 }
 
+.contact{
+    margin-top: 35px;
+}
+
+.contact a {
+    background-color: var(--blue-console);
+    padding: 0.8rem;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.contact a:hover {
+    background-color: var(--dark);
+    color: var(--blue-console);
+}
+
+.contact a:visited {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.contact a:active {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.myServices{
+    padding: 0.1rem;
+    background-color: var(--blue-console);
+    color: var(--dark)
+}
+
+.services{
+    padding: 1rem;
+}
+
+.servicesDescription {
+    text-align: center;
+}
+
+.servicesIcon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
