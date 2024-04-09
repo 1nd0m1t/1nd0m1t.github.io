@@ -160,7 +160,5 @@ a:hover{
 }
 
 .sombra {
-    -webkit-box-shadow: 0px 0px 28px 1px rgba(72,202,228,1);
-    -moz-box-shadow: 0px 0px 28px 1px rgba(72,202,228,1);
     box-shadow: 0px 0px 28px 1px rgba(72,202,228,1);
 }
