@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 .title{
-    padding: 20px;
+    padding: 2rem;
 }
 
 .container{
@@ -85,6 +85,11 @@ h1, h2, h3 {
     color: var(--blue-console);
 }
 
+.sombra {
+    box-shadow: 0px 0px 28px 1px rgba(72,202,228,1);
+}
+
+/* Content hero */
 .hero {
 	/*background-image: url(link);*/
 	background-repeat: no-repeat;
@@ -121,6 +126,13 @@ h1, h2, h3 {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+	.boton {
+		width: auto;
+	}
+}
+/* Content hero */
+
 a:visited {
     text-decoration: none;
     color: var(--dark);
@@ -131,34 +143,59 @@ a:hover{
     color: var(--blue-console);
 }
 
-@media (min-width: 768px) {
-	.boton {
-		width: auto;
-	}
-}
 
+/** Services **/
 .myServices{
     padding: 0.1rem;
     background-color: var(--blue-console);
     color: var(--dark)
 }
 
-.services{
+.services {
+    padding: 2rem;
+    column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .services{
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px;
+        column-gap: 1rem;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 
-.servicesDescription {
-    text-align: center;
+.servicio p {
+    line-height: 2;
 }
 
-.servicesIcon{
+.service .servicesIcon{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+/** Services **/
+
+/* Contact */
+.formulary {
+    width: min(60rem, 100%); /* Elige el valor más pequeño. Nos ahorramos media queries, si la pantalla mide 30rem elegiria la opción 100% ya que 100%=30rem y es más pequeño que 60rem */
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.sombra {
-    box-shadow: 0px 0px 28px 1px rgba(72,202,228,1);
+.formulary legend {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
 }
+
+/** Contact **/
